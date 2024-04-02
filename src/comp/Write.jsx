@@ -27,7 +27,7 @@ function Write({ insert, updateItem }) {
             <form onSubmit={submit}>
                 <input type="text" name='txt' value={txt}
                 onChange={(e)=>{setTxt(e.target.value)}} />
-                <input type='submit' value={type == 'insert' ? "저장" : "수정" } />
+                <input type='submit' value={type === 'insert' ? "저장" : "수정" } />
             </form>
         </div>
     );

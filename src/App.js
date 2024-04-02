@@ -36,7 +36,7 @@ function App() {
   }
   let isDone = (id) => {
     let d = data.map((obj) => {
-      if (obj.id == id) {
+      if (obj.id === id) {
         obj.state = !obj.state;
         console.log(obj.state)
       }
@@ -46,7 +46,7 @@ function App() {
   }
   function update(id) {
     let d = data.filter((obj) => {
-      return (obj.id == id)
+      return (obj.id === id)
     });
     setUpdateItem(...d);
 
